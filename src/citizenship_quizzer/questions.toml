@@ -1,0 +1,17 @@
+# from https://www.uscis.gov/sites/default/files/document/questions-and-answers/100q.pdf
+[[questions]]
+category = "Principles of American Democracy"
+questions = [
+  { id = 1, question = "What is the supreme law of the land?", answers = ["the Constitution"] },
+  { id = 2, question = "What does the Constitution do?", answers = ["sets up the government", "defines the government", "protects basic rights of Americans"] },
+  { id = 3, question = "The idea of self-government is in the first three words of the Constitution. What are these words?", answers = ["We the People"] },
+  { id = 4, question = "What is an amendment?", answers = ["a change (to the Constitution)", "an addition (to the Constitution)"] },
+  { id = 5, question = "What do we call the first ten amendments to the Constitution?", answers = ["the Bill of Rights"] },
+  { id = 6, question = "What is one right or freedom from the First Amendment?", answers = ["speech", "religion", "assembly", "press", "petition the government"] },
+  { id = 7, question = "How many amendments does the Constitution have?", answers = ["twenty-seven (27)"] },
+  { id = 8, question = "What did the Declaration of Independence do?", answers = ["announced our independence (from Great Britain)", "declared our independence (from Great Britain)", "said that the United States is free (from Great Britain)"] },
+  { id = 9, question = "What are two rights in the Declaration of Independence?", answers = ["life", "liberty", "pursuit of happiness"] },
+  { id = 10, question = "What is freedom of religion?", answers = ["You can practice any religion, or not practice a religion."] },
+  { id = 11, question = "What is the economic system in the United States?", answers = ["capitalist economy", "market economy"] },
+  { id = 12, question = "What is the “rule of law”?", answers = ["Everyone must follow the law.", "Leaders must obey the law.", "Government must obey the law."] }
+]
