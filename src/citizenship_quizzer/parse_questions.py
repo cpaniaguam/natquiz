@@ -1,18 +1,25 @@
+#!/usr/bin/env python3
 import tomllib
+from pathlib import Path
 
-# Load the TOML file
-with open('questions.toml', 'rb') as file:
-    doc = tomllib.load(file)
+def load_questions():
+    path = Path(__file__).parent / 'questions.toml'
 
-# Access data
-for question in doc['questions']:
-    print(f"Category: {question['category']}")
-    for q in question['questions']:
-        print(f"Question ID: {q['id']}")
-        print(f"Question: {q['question']}")
-        print(f"Answers: {q['answers']}")
-    print("\n")
+    with open(path, 'rb') as file:
+        doc = tomllib.load(file)
+    return doc
 
-# if __name__ == '__main__':
-#     questions = parse_questions()
-#     print(questions)
+def show_questions():
+    doc = load_questions()
+    for section, questions in doc.items():
+        print(f"Section: {section}")
+        for question in questions:
+            id = question['id']
+            _question = question['question']
+            answers = question['answers']
+            print(f"\nQuestion {id}: {_question}")
+            for i, answer in enumerate(answers, 1):
+                print(f"\tAnswer {i}: {answer}")
+        
+if __name__ == '__main__':
+    show_questions()
