@@ -1,3 +1,7 @@
+# Source: https://www.uscis.gov/sites/default/files/document/questions-and-answers/100q.pdf
+# rev. 01/19
+# Juneteenth is included as one of the federal holidays; the revision above does not.
+
 [["Principles of American Democracy"]]
 id = 1
 question = "What is the supreme law of the land?"
@@ -496,4 +500,4 @@ answers = ["July 4"]
 [["INTEGRATED CIVICS"]]
 id = 100
 question = "Name two national U.S. holidays."
-answers = ["New Year’s Day", "Martin Luther King, Jr. Day", "Presidents’ Day", "Memorial Day", "Independence Day", "Labor Day", "Columbus Day", "Veterans Day", "Thanksgiving", "Christmas"]
+answers = ["New Year’s Day", "Martin Luther King, Jr. Day", "Presidents’ Day", "Memorial Day", "Juneteenth National Independence Day", "Independence Day", "Labor Day", "Columbus Day", "Veterans Day", "Thanksgiving", "Christmas"]
