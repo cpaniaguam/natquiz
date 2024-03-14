@@ -1,7 +1,7 @@
 [project]
 name = "natquiz"
 
-dynamic = ["version"]
+version="0.1.1"
 
 description = "A command line tool to help people prepare for their US naturalization test."
 
@@ -19,8 +19,9 @@ authors = [
 
 classifiers = [
   "Development Status :: 3 - Alpha",
-  "Intended Audience :: General public",
-  "Topic :: US naturalization",
+  "Intended Audience :: Education",
+  "Intended Audience :: End Users/Desktop",
+  "Topic :: Education",
   "Programming Language :: Python :: 3.11",
   "Programming Language :: Python :: 3 :: Only",
 ]
