@@ -1,4 +1,4 @@
-# `natquiz` - a US naturalization test quiz
+# `natquiz` - a US naturalization test quiz app
 
 `natquiz` is a tool designed to help you prepare for the US naturalization test. It provides a set of questions that mimic an actual test, allowing you to practice and improve your knowledge of US Civics.
 
