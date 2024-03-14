@@ -1,5 +1,5 @@
 [project]
-name = "citizenship-quizzer"
+name = "natquiz"
 
 dynamic = ["version"]
 
@@ -9,15 +9,13 @@ readme = "README.md"
 
 requires-python = ">=3.11"
 
-license = {file = "LICENSE.txt"}
-
+license = {file = "LICENSE"}
 
 keywords = ["command line tool", "US naturalization"]
 
 authors = [
   { name = "Carlos Paniagua", email = "cpaniaguam@gmail.com" }
 ]
-
 
 classifiers = [
   "Development Status :: 3 - Alpha",
@@ -27,33 +25,24 @@ classifiers = [
   "Programming Language :: Python :: 3 :: Only",
 ]
 
-
 [project.urls]
-"Homepage" = "https://github.com/cpaniaguam/citizenship-quizzer"
-"Bug Reports" = "https://github.com/cpaniaguam/citizenship-quizzer/issues"
-"Source" = "https://github.com/cpaniaguam/citizenship-quizzer"
+"Homepage" = "https://github.com/cpaniaguam/natquiz"
+"Bug Reports" = "https://github.com/cpaniaguam/natquiz/issues"
+"Source" = "https://github.com/cpaniaguam/natquiz"
 
-# TODO
 [project.scripts]
-citizenship-quizzer = "citizenship_quizzer.app:main"
+natquiz = "natquiz.app:main"
 
-
-# This is configuration specific to the `setuptools` build backend.
-# If you are using a different build backend, you will need to change this.
 [tool.setuptools]
 # If there are data files included in your packages that need to be
 # installed, specify them here.
 # TODO: ADD ANY DATA FILES WE WANT TO HAVE
-package-data = {"icesat2waves" = ["config/*.json"]}
+# package-data = {"natquiz" = ["config/*.json"]}
 
 [tool.setuptools.packages.find]
 where = ["src"]
 
 [build-system]
-# These are the assumed default build requirements from pip:
-# https://pip.pypa.io/en/stable/reference/pip/#pep-517-and-518-support
-#requires = ["setuptools>=43.0.0", "wheel","hatchling"]
-#build-backend = "hatchling.build"
 requires = ["setuptools>=43.0.0", "setuptools_scm>=8", "wheel"]
 build-backend = "setuptools.build_meta"
 
