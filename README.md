@@ -10,11 +10,11 @@
 
 ## Installation
 
-To install the package, issue the command `pip install natquiz` (requires Python >= 3.11).
+To install the package, issue the command `pip install natquiz` (requires Python >= 3.11 which you can download from [python.org/downloads](https://www.python.org/downloads/)).
 
 ## Usage
 
-Upon installation, use the `natquiz` command.
+Upon installation, use the `natquiz` command. On mac/linux computers you can use the `terminal` app; on Windows you can use `Powershell`, `Windows terminal` or any other terminal application you already use.
 
 ```shell
 $ natquiz --help
