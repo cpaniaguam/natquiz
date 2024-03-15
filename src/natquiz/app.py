@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 import argparse
+import os
 import random
-from typing import List, Dict, Union
 from collections import Counter
+from typing import List, Dict, Union
 
 from natquiz.parse_questions import load_questions, show_questions
 
@@ -52,6 +53,11 @@ def select_questions(n:int) -> Dict[str, List[Dict[str, Union[int, str, List[str
 
     return questions_to_ask
 
+def clear_screen():
+    if os.name == 'nt': # Windows
+        os.system('cls')
+    else: # Unix
+        os.system('clear')
 
 def ask_questions(n):
     questions_to_ask = select_questions(n)
