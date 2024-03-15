@@ -71,10 +71,18 @@ def ask_questions(n):
             input("\n(Press enter for the next question)")
         print()
 
+def bounded_int(x, low=1, high=10):
+    try:
+        x = int(x)
+    except ValueError:
+        raise argparse.ArgumentTypeError("Invalid value: '{}'. Please provide an integer from 1 to 10.".format(x))
+    if x < low or x > high:
+        raise argparse.ArgumentTypeError("Number must be between 1 and 10")
+    return x
 
 def main():
     parser = argparse.ArgumentParser(description="natquiz - a US naturalization quiz")
-    parser.add_argument("-n", type=int, default=10, help="Number of questions to ask (default: 10)")
+    parser.add_argument("-n", type=bounded_int, default=10, help="Number of questions to ask (default: 10)")
     parser.add_argument("--show-all", action="store_true", default=False, help="Show all questions and exit")
     args = parser.parse_args()
 
@@ -102,7 +110,6 @@ def main():
                 break
 
     print("Good luck on your interview!\n")
-
 
 if __name__ == "__main__":
     main()
