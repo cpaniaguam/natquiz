@@ -1,24 +1,55 @@
 #!/usr/bin/env python3
 import argparse
 import random
+from typing import List, Dict, Union
+from collections import Counter
 
 from natquiz.parse_questions import load_questions, show_questions
 
 
-def select_questions(n):
-    questions = load_questions()
+def select_questions(n:int) -> Dict[str, List[Dict[str, Union[int, str, List[str]]]]]:
+    """
+    Select `n` questions to ask during the quiz.
+
+    Returns:
+        Dict[str, List[Dict[str, Union[int, str, List[str]]]]]: A dictionary where each key is a string (the category) 
+        and each value is a list of dictionaries. Each dictionary represents a question and contains three keys: 'id' (an integer), 
+        'question' (a string), and 'answers' (a list of strings).
+
+    Example:
+        {
+            'Principles of American Democracy': [
+                {
+                    'id': 1, 
+                    'question': 'What is the supreme law of the land?', 
+                    'answers': ['the Constitution']
+                }, 
+                {
+                    'id': 5, 
+                    'question': 'What do we call the first ten amendments to the Constitution?', 
+                    'answers': ['the Bill of Rights']
+                }
+            ]
+        }
+    """
+
+    questions:dict = load_questions()
     categories = list(questions.keys())
+    # categories are
+    # 'Principles of American Democracy'
+    # 'System of Government'
+    # 'Rights and Responsibilities'
+    # 'American History'
+    # 'Integrated Civics'
 
     # choose n categories
-    selected_categories = random.choices(categories, k=n)
-    questions_to_ask = []
-    for category in selected_categories:
-        # ensure unique questions are asked
-        while True:
-            _question = random.sample(questions[category], 1)[0]
-            if _question not in questions_to_ask:
-                questions_to_ask.append((category, _question))
-                break
+    selected_categories = Counter(random.choices(categories, k=n)) # sample with replacement
+    questions_to_ask = {category: random.sample(questions[category], count) for category, count in selected_categories.items()}
+    
+    # Flatten questions_to_ask and shuffle
+    questions_to_ask = [(cat, question) for cat, questions in questions_to_ask.items() for question in questions]
+    random.shuffle(questions_to_ask)
+
     return questions_to_ask
 
 
