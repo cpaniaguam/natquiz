@@ -65,6 +65,10 @@ def ask_questions(n):
         input("(Press enter to show answers)")
         for i, answer in enumerate(answers, 1):
             print(f"\tAnswer {i}: {answer}")
+
+        # Pause between answer and next question
+        if j < n:
+            input("\n(Press enter for the next question)")
         print()
 
 
