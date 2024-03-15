@@ -96,7 +96,7 @@ def bounded_int(x, low=1, high=10):
     return x
 
 def main():
-    parser = argparse.ArgumentParser(description="natquiz - a US naturalization quiz")
+    parser = argparse.ArgumentParser(description="natquiz - a US naturalization quiz app")
     parser.add_argument("-n", type=bounded_int, default=10, help="Number of questions to ask (default: 10)")
     parser.add_argument("--show-all", action="store_true", default=False, help="Show all questions and exit")
     parser.add_argument("--clear-scr", action="store_true", default=False, help="Clear screen after answer is shown (default: False unless specified)")
@@ -112,7 +112,7 @@ def main():
         print(f"\n- US Naturalization Quiz -")
         print(f"\nNumber of questions to ask: {args.n}\n")
         ask_questions(args.n, clear_scr=args.clear_scr)
-        
+
         while True:
             response = input()
             if not response or response.lower()[0] not in ["y", "n"]:

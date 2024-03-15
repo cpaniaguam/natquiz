@@ -18,14 +18,16 @@ Upon installation, use the `natquiz` command. On mac/linux computers you can use
 
 ```shell
 $ natquiz --help
-usage: natquiz [-h] [-n N] [--show-all]
+usage: natquiz [-h] [-n N] [--show-all] [--clear-scr]
 
-natquiz - a US naturalization quiz
+natquiz - a US naturalization quiz app
 
 options:
-  -h, --help  show this help message and exit
-  -n N        Number of questions to ask (default: 10)
-  --show-all  Show all questions and exit
+  -h, --help   show this help message and exit
+  -n N         Number of questions to ask (default: 10)
+  --show-all   Show all questions and exit
+  --clear-scr  Clear screen after answer is shown (default: False unless
+               specified)
 ```
 
 To get a regular, 10-question quiz simply issue the `natquiz` command.
@@ -42,7 +44,7 @@ What is the capital of the United States?
 (Press enter to show answers)
 ```
 
-As shown, press enter to show the answers to the question. The next question is displayed afterwards.
+As shown, press enter to show the answers to the question. Press enter again to display the next question.
 ```shell
 
 - US Naturalization Quiz -    
@@ -54,6 +56,8 @@ Category: INTEGRATED CIVICS
 What is the capital of the United States?
 (Press enter to show answers)
         Answer 1: Washington, D.C.
+
+(Press enter for the next question)
 
 Question 2 of 10
 Category: Rights and Responsibilities
@@ -84,7 +88,9 @@ Good luck on your interview!
 
 If you would like a quiz with fewer than 10 questions, use the `-n` option with the number of questions you would like for the quiz. For example, you would get a two-question quiz with `natquiz -n 2` or `natquiz -n=2`.
 
-To view all the questions issue `natquiz --show-all`.
+To view all the questions issue `natquiz --show-all`. 
+
+To clear the previous question and its answer(s) before displaying the next question, use the `--clear-scr switch`. For example,  `natquiz --clear-scr`.
 
 ## Contributing
 
