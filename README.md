@@ -90,7 +90,7 @@ If you would like a quiz with fewer than 10 questions, use the `-n` option with 
 
 To view all the questions issue `natquiz --show-all`. 
 
-To clear the previous question and its answer(s) before displaying the next question, use the `--clear-scr switch`. For example,  `natquiz --clear-scr`.
+To clear the previous question and its answer(s) before displaying the next question, use the `--clear-scr` switch. For example,  `natquiz --clear-scr`.
 
 ## Contributing
 
