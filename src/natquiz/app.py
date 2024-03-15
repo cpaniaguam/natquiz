@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 import argparse
+from ast import arg
 import os
+import platform
 import random
 from collections import Counter
 from typing import List, Dict, Union
@@ -54,12 +56,12 @@ def select_questions(n:int) -> Dict[str, List[Dict[str, Union[int, str, List[str
     return questions_to_ask
 
 def clear_screen():
-    if os.name == 'nt': # Windows
+    if platform.system() == 'Windows':
         os.system('cls')
-    else: # Unix
+    else:
         os.system('clear')
 
-def ask_questions(n):
+def ask_questions(n, clear_scr=True):
     questions_to_ask = select_questions(n)
     for j, (cat, _question) in enumerate(questions_to_ask, 1):
         id, question, answers = (
@@ -67,6 +69,7 @@ def ask_questions(n):
             _question["question"],
             _question["answers"],
         )
+        
         print(f"Question {j} of {n}" f"\nCategory: {cat}" f"\n{question}")
         input("(Press enter to show answers)")
         for i, answer in enumerate(answers, 1):
@@ -75,7 +78,13 @@ def ask_questions(n):
         # Pause between answer and next question
         if j < n:
             input("\n(Press enter for the next question)")
+            if clear_scr:
+                clear_screen()
+        else:
+            print("\nThis is the end of the quiz. Would you like to do another quiz? (Yes/No): ")
+    
         print()
+
 
 def bounded_int(x, low=1, high=10):
     try:
@@ -90,6 +99,7 @@ def main():
     parser = argparse.ArgumentParser(description="natquiz - a US naturalization quiz")
     parser.add_argument("-n", type=bounded_int, default=10, help="Number of questions to ask (default: 10)")
     parser.add_argument("--show-all", action="store_true", default=False, help="Show all questions and exit")
+    parser.add_argument("--clear-scr", action="store_true", default=False, help="Clear screen after answer is shown (default: False unless specified)")
     args = parser.parse_args()
 
     if args.show_all:
@@ -98,14 +108,11 @@ def main():
 
     do_another = True
     while do_another:
-
+        clear_screen()
         print(f"\n- US Naturalization Quiz -")
         print(f"\nNumber of questions to ask: {args.n}\n")
-        ask_questions(args.n)
-        print(
-            "\nThis is the end of the quiz. Would you like to do another quiz? (Yes/No): "
-        )
-
+        ask_questions(args.n, clear_scr=args.clear_scr)
+        
         while True:
             response = input()
             if not response or response.lower()[0] not in ["y", "n"]:
