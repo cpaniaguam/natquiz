@@ -56,11 +56,13 @@ def main():
         print(
             "\nThis is the end of the quiz. Would you like to do another quiz? (Yes/No): "
         )
+
         while True:
             response = input()
-            if response.lower()[0] not in ["y", "n"]:
+            if not response or response.lower()[0] not in ["y", "n"]:
                 print("Invalid input. Please enter Yes or No.")
             else:
+                response = response.lower()[0]
                 do_another = True if response == "y" else False
                 break
 
