@@ -7,6 +7,7 @@
 - Comprehensive question bank: `natquiz` includes the full set of questions covering all sections of the US naturalization test.
 - Randomized quizzes: Each quiz you take is randomly generated, ensuring that you get a unique set of questions every time.
 - Full question bank: The full question bank can be viewed from the command line.
+- Multi-language support: Available in English and Spanish.
 
 ## Installation
 
@@ -18,16 +19,17 @@ Upon installation, use the `natquiz` command. On mac/linux computers you can use
 
 ```shell
 $ natquiz --help
-usage: natquiz [-h] [-n N] [--show-all] [--clear-scr]
+usage: natquiz [-h] [-n N] [--show-all] [--clear-scr] [-l {en,es}]
 
 natquiz - a US naturalization quiz app
 
 options:
-  -h, --help   show this help message and exit
-  -n N         Number of questions to ask (default: 10)
-  --show-all   Show all questions and exit
-  --clear-scr  Clear screen after answer is shown (default: False unless
-               specified)
+  -h, --help            show this help message and exit
+  -n N                  Number of questions to ask (default: 10)
+  --show-all            Show all questions and exit
+  --clear-scr           Clear screen after answer is shown (default: False unless specified)
+  -l {en,es}, --language {en,es}
+                        Language for questions and interface (default: en)
 ```
 
 To get a regular, 10-question quiz simply issue the `natquiz` command.
@@ -91,6 +93,29 @@ If you would like a quiz with fewer than 10 questions, use the `-n` option with 
 To view all the questions issue `natquiz --show-all`. 
 
 To clear the previous question and its answer(s) before displaying the next question, use the `--clear-scr` switch. For example,  `natquiz --clear-scr`.
+
+### Language Selection
+
+`natquiz` supports both English and Spanish. To use the quiz in Spanish, use the `-l es` or `--language es` option:
+
+```shell
+$ natquiz -l es -n 2
+
+- Examen de Naturalización de los Estados Unidos -
+
+Número de preguntas: 2
+
+Pregunta 1 de 2
+Categoría: Historia Estadounidense
+¿Qué territorio compró los Estados Unidos de Francia en 1803?
+(Presione enter para mostrar las respuestas)
+	Respuesta 1: el territorio de Louisiana
+	Respuesta 2: Louisiana
+
+(Presione enter para la siguiente pregunta)
+```
+
+The language option affects both the questions and all interface text. You can also view all questions in Spanish using `natquiz --show-all -l es`.
 
 ## Contributing
 

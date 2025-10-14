@@ -1,20 +1,40 @@
 #!/usr/bin/env python3
 import tomllib
 from pathlib import Path
+from natquiz.i18n import get_strings
 
 
-def load_questions():
-    path = Path(__file__).parent / "questions.toml"
+def load_questions(language="en"):
+    """
+    Load questions from the appropriate language file.
+    
+    Args:
+        language: Language code (e.g., "en", "es")
+    
+    Returns:
+        Dictionary of questions organized by category
+    """
+    if language == "es":
+        path = Path(__file__).parent / "questions_es.toml"
+    else:
+        path = Path(__file__).parent / "questions.toml"
 
     with open(path, "rb") as file:
         doc = tomllib.load(file)
     return doc
 
 
-def show_questions():
-    doc = load_questions()
+def show_questions(language="en"):
+    """
+    Display all questions in the specified language.
+    
+    Args:
+        language: Language code (e.g., "en", "es")
+    """
+    doc = load_questions(language)
+    strings = get_strings(language)
     for section, questions in doc.items():
-        print(f"Section: {section}")
+        print(strings["section"].format(section))
         for question in questions:
             id = question["id"]
             _question = question["question"]

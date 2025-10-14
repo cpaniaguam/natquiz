@@ -1,0 +1,503 @@
+# Fuente: https://www.uscis.gov/sites/default/files/document/questions-and-answers/100q.pdf
+# rev. 01/19
+# Juneteenth está incluido como uno de los días festivos federales; la revisión anterior no lo incluye.
+
+[["Principios de la Democracia Estadounidense"]]
+id = 1
+question = "¿Cuál es la ley suprema de la nación?"
+answers = ["la Constitución"]
+
+[["Principios de la Democracia Estadounidense"]]
+id = 2
+question = "¿Qué función cumple la Constitución?"
+answers = ["establece el gobierno", "define el gobierno", "protege los derechos básicos de los ciudadanos estadounidenses"]
+
+[["Principios de la Democracia Estadounidense"]]
+id = 3
+question = "La idea del autogobierno está en las primeras tres palabras de la Constitución. ¿Cuáles son estas palabras?"
+answers = ["Nosotros el Pueblo (We the People)"]
+
+[["Principios de la Democracia Estadounidense"]]
+id = 4
+question = "¿Qué es una enmienda?"
+answers = ["un cambio (a la Constitución)", "una adición (a la Constitución)"]
+
+[["Principios de la Democracia Estadounidense"]]
+id = 5
+question = "¿Cómo llamamos a las primeras diez enmiendas a la Constitución?"
+answers = ["la Carta de Derechos (Bill of Rights)"]
+
+[["Principios de la Democracia Estadounidense"]]
+id = 6
+question = "¿Cuál es un derecho o libertad de la Primera Enmienda?"
+answers = ["expresión", "religión", "reunión", "prensa", "peticionar al gobierno"]
+
+[["Principios de la Democracia Estadounidense"]]
+id = 7
+question = "¿Cuántas enmiendas tiene la Constitución?"
+answers = ["veintisiete (27)"]
+
+[["Principios de la Democracia Estadounidense"]]
+id = 8
+question = "¿Qué estableció la Declaración de Independencia?"
+answers = ["anunció nuestra independencia (de Gran Bretaña)", "declaró nuestra independencia (de Gran Bretaña)", "dijo que los Estados Unidos se independizó (de Gran Bretaña)"]
+
+[["Principios de la Democracia Estadounidense"]]
+id = 9
+question = "¿Cuáles son dos derechos en la Declaración de Independencia?"
+answers = ["la vida", "la libertad", "la búsqueda de la felicidad"]
+
+[["Principios de la Democracia Estadounidense"]]
+id = 10
+question = "¿Qué es la libertad de religión?"
+answers = ["Puedes practicar cualquier religión o no practicar una religión."]
+
+[["Principios de la Democracia Estadounidense"]]
+id = 11
+question = "¿Cuál es el sistema económico de los Estados Unidos?"
+answers = ["economía capitalista", "economía de mercado"]
+
+[["Principios de la Democracia Estadounidense"]]
+id = 12
+question = "¿En qué consiste el estado de derecho?"
+answers = ["Todos deben obedecer la ley.", "Los líderes deben obedecer la ley.", "El gobierno debe obedecer la ley."]
+
+[["Sistema de Gobierno"]]
+id = 13
+question = "Nombre una rama o parte del gobierno."
+answers = ["Congreso", "Poder legislativo", "Presidente", "Poder ejecutivo", "los tribunales", "Poder judicial"]
+
+[["Sistema de Gobierno"]]
+id = 14
+question = "¿Qué es lo que hace que una rama del gobierno no se vuelva demasiado poderosa?"
+answers = ["pesos y contrapesos", "separación de poderes"]
+
+[["Sistema de Gobierno"]]
+id = 15
+question = "¿Quién está a cargo del poder ejecutivo?"
+answers = ["el Presidente"]
+
+[["Sistema de Gobierno"]]
+id = 16
+question = "¿Quién crea las leyes federales?"
+answers = ["el Congreso", "el Senado y la Cámara (de Representantes)", "la legislatura (nacional o de los Estados Unidos)"]
+
+[["Sistema de Gobierno"]]
+id = 17
+question = "¿Cuáles son las dos partes del Congreso de los Estados Unidos?"
+answers = ["el Senado y la Cámara (de Representantes)"]
+
+[["Sistema de Gobierno"]]
+id = 18
+question = "¿Cuántos senadores de los Estados Unidos hay?"
+answers = ["cien (100)"]
+
+[["Sistema de Gobierno"]]
+id = 19
+question = "¿Por cuántos años elegimos a un senador de los Estados Unidos?"
+answers = ["seis (6)"]
+
+[["Sistema de Gobierno"]]
+id = 20
+question = "¿Quién es uno de los senadores de los Estados Unidos de su estado ahora?"
+answers = ["Las respuestas variarán. [Los residentes del Distrito de Columbia y los territorios de los Estados Unidos deberán responder que D.C. (o el territorio en donde vive el postulante) no tiene Senadores de los Estados Unidos.]"]
+
+[["Sistema de Gobierno"]]
+id = 21
+question = "¿Cuántos miembros votantes tiene la Cámara de Representantes?"
+answers = ["cuatrocientos treinta y cinco (435)"]
+
+[["Sistema de Gobierno"]]
+id = 22
+question = "¿Por cuántos años elegimos a un representante de los Estados Unidos?"
+answers = ["dos (2)"]
+
+[["Sistema de Gobierno"]]
+id = 23
+question = "Dé el nombre de su representante de los Estados Unidos."
+answers = ["Las respuestas variarán. [Los residentes de territorios con Delegados no votantes o Comisionados Residentes pueden decir el nombre de dicho Delegado o Comisionado. Una respuesta aceptable es que el territorio no tiene representantes votantes en el Congreso.]"]
+
+[["Sistema de Gobierno"]]
+id = 24
+question = "¿A quiénes representa un senador de los Estados Unidos?"
+answers = ["todas las personas del estado"]
+
+[["Sistema de Gobierno"]]
+id = 25
+question = "¿Por qué hay algunos estados con más representantes que otros?"
+answers = ["(debido a) la población del estado", "(debido a que) tienen más gente", "(debido a que) algunos estados tienen más gente"]
+
+[["Sistema de Gobierno"]]
+id = 26
+question = "¿Por cuántos años elegimos a un Presidente?"
+answers = ["cuatro (4)"]
+
+[["Sistema de Gobierno"]]
+id = 27
+question = "¿En qué mes votamos por un nuevo Presidente?"
+answers = ["noviembre"]
+
+[["Sistema de Gobierno"]]
+id = 28
+question = "¿Cómo se llama el actual Presidente de los Estados Unidos?"
+answers = ["Visite uscis.gov/es/ciudadania/actualizacionesalexamen para obtener el nombre del Presidente de los Estados Unidos."]
+
+[["Sistema de Gobierno"]]
+id = 29
+question = "¿Cómo se llama el actual Vicepresidente de los Estados Unidos?"
+answers = ["Visite uscis.gov/es/ciudadania/actualizacionesalexamen para obtener el nombre del Vicepresidente de los Estados Unidos."]
+
+[["Sistema de Gobierno"]]
+id = 30
+question = "Si el Presidente ya no puede cumplir sus funciones, ¿quién se vuelve Presidente?"
+answers = ["el Vicepresidente"]
+
+[["Sistema de Gobierno"]]
+id = 31
+question = "Si tanto el Presidente como el Vicepresidente ya no pueden cumplir sus funciones, ¿quién se vuelve Presidente?"
+answers = ["el Presidente de la Cámara de Representantes"]
+
+[["Sistema de Gobierno"]]
+id = 32
+question = "¿Quién es el Comandante en Jefe de las Fuerzas Armadas?"
+answers = ["el Presidente"]
+
+[["Sistema de Gobierno"]]
+id = 33
+question = "¿Quién firma los proyectos de ley para convertirlos en ley?"
+answers = ["el Presidente"]
+
+[["Sistema de Gobierno"]]
+id = 34
+question = "¿Quién veta los proyectos de ley?"
+answers = ["el Presidente"]
+
+[["Sistema de Gobierno"]]
+id = 35
+question = "¿Qué hace el Gabinete del Presidente?"
+answers = ["asesora al Presidente"]
+
+[["Sistema de Gobierno"]]
+id = 36
+question = "¿Cuáles son dos puestos a nivel de gabinete?"
+answers = ["Secretario de Agricultura", "Secretario de Comercio", "Secretario de Defensa", "Secretario de Educación", "Secretario de Energía", "Secretario de Salud y Servicios Humanos", "Secretario de Seguridad Nacional", "Secretario de Vivienda y Desarrollo Urbano", "Secretario del Interior", "Secretario del Trabajo", "Secretario de Estado", "Secretario de Transporte", "Secretario del Tesoro", "Secretario de Asuntos de Veteranos", "Procurador General", "Vicepresidente"]
+
+[["Sistema de Gobierno"]]
+id = 37
+question = "¿Qué hace el poder judicial?"
+answers = ["revisa las leyes", "explica las leyes", "resuelve disputas (desacuerdos)", "decide si una ley va en contra de la Constitución"]
+
+[["Sistema de Gobierno"]]
+id = 38
+question = "¿Cuál es el tribunal más alto de los Estados Unidos?"
+answers = ["la Corte Suprema"]
+
+[["Sistema de Gobierno"]]
+id = 39
+question = "¿Cuántos jueces hay en la Corte Suprema?"
+answers = ["Visite uscis.gov/es/ciudadania/actualizacionesalexamen para obtener el número de jueces en la Corte Suprema."]
+
+[["Sistema de Gobierno"]]
+id = 40
+question = "¿Quién es el Presidente de la Corte Suprema de los Estados Unidos actualmente?"
+answers = ["Visite uscis.gov/es/ciudadania/actualizacionesalexamen para obtener el nombre del Presidente de la Corte Suprema de los Estados Unidos."]
+
+[["Sistema de Gobierno"]]
+id = 41
+question = "De acuerdo a nuestra Constitución, algunos poderes pertenecen al gobierno federal. ¿Cuál es un poder del gobierno federal?"
+answers = ["imprimir dinero", "declarar la guerra", "crear un ejército", "suscribir tratados"]
+
+[["Sistema de Gobierno"]]
+id = 42
+question = "De acuerdo a nuestra Constitución, algunos poderes pertenecen a los estados. ¿Cuál es un poder de los estados?"
+answers = ["proveer escuelas y educación", "proveer protección (policía)", "proveer seguridad (cuerpos de bomberos)", "conceder licencias de conducir", "aprobar la zonificación y uso de la tierra"]
+
+[["Sistema de Gobierno"]]
+id = 43
+question = "¿Quién es el gobernador actual de su estado?"
+answers = ["Las respuestas variarán. [Los residentes del Distrito de Columbia deben decir que D.C. no tiene gobernador.]"]
+
+[["Sistema de Gobierno"]]
+id = 44
+question = "¿Cuál es la capital de su estado?"
+answers = ["Las respuestas variarán. [Los residentes del Distrito de Columbia deben responder que D.C. no es un estado y, por lo tanto, no tiene capital. Los residentes de los territorios de los Estados Unidos deben dar el nombre de la capital del territorio.]"]
+
+[["Sistema de Gobierno"]]
+id = 45
+question = "¿Cuáles son los dos principales partidos políticos de los Estados Unidos?"
+answers = ["Demócrata y Republicano"]
+
+[["Sistema de Gobierno"]]
+id = 46
+question = "¿Cuál es el partido político del Presidente actual?"
+answers = ["Visite uscis.gov/es/ciudadania/actualizacionesalexamen para obtener el partido político del Presidente."]
+
+[["Sistema de Gobierno"]]
+id = 47
+question = "¿Cómo se llama el Presidente de la Cámara de Representantes ahora?"
+answers = ["Visite uscis.gov/es/ciudadania/actualizacionesalexamen para obtener el nombre del Presidente de la Cámara de Representantes."]
+
+[["Derechos y Responsabilidades"]]
+id = 48
+question = "Hay cuatro enmiendas a la Constitución sobre quién puede votar. Describa una de ellas."
+answers = ["Ciudadanos de dieciocho (18) años en adelante (pueden votar).", "No se exige pagar un impuesto para votar (impuesto para acudir a las urnas).", "Cualquier ciudadano puede votar. (Las mujeres y los hombres pueden votar.)", "Un ciudadano hombre de cualquier raza (puede votar)."]
+
+[["Derechos y Responsabilidades"]]
+id = 49
+question = "¿Cuál es una responsabilidad que corresponde sólo a los ciudadanos de los Estados Unidos?"
+answers = ["prestar servicio en un jurado", "votar en una elección federal"]
+
+[["Derechos y Responsabilidades"]]
+id = 50
+question = "Mencione un derecho que puede ser ejercido sólo por ciudadanos de los Estados Unidos."
+answers = ["votar en una elección federal", "postularse a un cargo político federal"]
+
+[["Derechos y Responsabilidades"]]
+id = 51
+question = "¿Cuáles son dos derechos que pueden ejercer todas las personas que viven en los Estados Unidos?"
+answers = ["libertad de expresión", "libertad de palabra", "libertad de reunión", "libertad para peticionar al gobierno", "libertad de religión", "el derecho a portar armas"]
+
+[["Derechos y Responsabilidades"]]
+id = 52
+question = "¿Ante qué demostramos nuestra lealtad cuando decimos el Juramento de Lealtad (Pledge of Allegiance)?"
+answers = ["los Estados Unidos", "la bandera"]
+
+[["Derechos y Responsabilidades"]]
+id = 53
+question = "¿Cuál es una promesa que usted hace cuando se convierte en ciudadano de los Estados Unidos?"
+answers = ["renunciar la lealtad a otros países", "defender la Constitución y las leyes de los Estados Unidos", "obedecer las leyes de los Estados Unidos", "prestar servicio en las Fuerzas Armadas de los Estados Unidos (de ser necesario)", "prestar servicio a (hacer trabajo importante para) la nación (de ser necesario)", "ser leal a los Estados Unidos"]
+
+[["Derechos y Responsabilidades"]]
+id = 54
+question = "¿Cuántos años tienen que tener los ciudadanos para votar por el Presidente?"
+answers = ["dieciocho (18) años en adelante"]
+
+[["Derechos y Responsabilidades"]]
+id = 55
+question = "¿Cuáles son dos maneras mediante las cuales los ciudadanos estadounidenses pueden participar en su democracia?"
+answers = ["votar", "afiliarse a un partido político", "ayudar con una campaña", "unirse a un grupo cívico", "unirse a un grupo comunitario", "presentar su opinión sobre un asunto a un oficial elegido", "llamar a los senadores y representantes", "apoyar u oponerse públicamente a un asunto o política", "postularse a un cargo político", "enviar una carta o mensaje a un periódico"]
+
+[["Derechos y Responsabilidades"]]
+id = 56
+question = "¿Cuál es la fecha límite para enviar la declaración federal de impuesto sobre el ingreso?"
+answers = ["el 15 de abril"]
+
+[["Derechos y Responsabilidades"]]
+id = 57
+question = "¿Cuándo deben inscribirse todos los hombres en el Servicio Selectivo?"
+answers = ["a la edad de dieciocho (18) años", "entre los dieciocho (18) y veintiséis (26) años"]
+
+[["Historia Estadounidense"]]
+id = 58
+question = "¿Cuál es una razón por la que los colonos vinieron a los Estados Unidos?"
+answers = ["libertad", "libertad política", "libertad religiosa", "oportunidad económica", "para practicar su religión", "para huir de la persecución"]
+
+[["Historia Estadounidense"]]
+id = 59
+question = "¿Quiénes vivían en los Estados Unidos antes de la llegada de los europeos?"
+answers = ["indios americanos", "nativos americanos"]
+
+[["Historia Estadounidense"]]
+id = 60
+question = "¿Qué grupo de personas fue traído a los Estados Unidos y vendido como esclavos?"
+answers = ["africanos", "gente de África"]
+
+[["Historia Estadounidense"]]
+id = 61
+question = "¿Por qué lucharon los colonos contra los británicos?"
+answers = ["debido a los impuestos altos (impuestos sin representación)", "el ejército británico se quedó en sus casas (alojamiento, acuartelamiento)", "no tenían autogobierno"]
+
+[["Historia Estadounidense"]]
+id = 62
+question = "¿Quién escribió la Declaración de Independencia?"
+answers = ["(Thomas) Jefferson"]
+
+[["Historia Estadounidense"]]
+id = 63
+question = "¿Cuándo fue adoptada la Declaración de Independencia?"
+answers = ["el 4 de julio de 1776"]
+
+[["Historia Estadounidense"]]
+id = 64
+question = "Había 13 estados originales. Nombre tres."
+answers = ["New Hampshire", "Massachusetts", "Rhode Island", "Connecticut", "New York", "New Jersey", "Pennsylvania", "Delaware", "Maryland", "Virginia", "North Carolina", "South Carolina", "Georgia"]
+
+[["Historia Estadounidense"]]
+id = 65
+question = "¿Qué ocurrió en la Convención Constitucional?"
+answers = ["Se redactó la Constitución.", "Los Padres Fundadores redactaron la Constitución."]
+
+[["Historia Estadounidense"]]
+id = 66
+question = "¿Cuándo fue redactada la Constitución?"
+answers = ["1787"]
+
+[["Historia Estadounidense"]]
+id = 67
+question = "Los ensayos conocidos como Los Federalistas respaldaron la aprobación de la Constitución de los Estados Unidos. Nombre uno de los autores."
+answers = ["(James) Madison", "(Alexander) Hamilton", "(John) Jay", "Publius"]
+
+[["Historia Estadounidense"]]
+id = 68
+question = "Mencione una razón por la que es famoso Benjamin Franklin."
+answers = ["diplomático estadounidense", "el miembro de mayor edad de la Convención Constitucional", "primer Director General de Correos de los Estados Unidos", "autor de Almanaque del Pobre Richard", "fundó las primeras bibliotecas gratuitas"]
+
+[["Historia Estadounidense"]]
+id = 69
+question = "¿Quién se conoce como el Padre de Nuestra Patria?"
+answers = ["(George) Washington"]
+
+[["Historia Estadounidense"]]
+id = 70
+question = "¿Quién fue el primer Presidente?"
+answers = ["(George) Washington"]
+
+[["Historia Estadounidense"]]
+id = 71
+question = "¿Qué territorio compró los Estados Unidos de Francia en 1803?"
+answers = ["el territorio de Louisiana", "Louisiana"]
+
+[["Historia Estadounidense"]]
+id = 72
+question = "Mencione una guerra en la que peleó los Estados Unidos en los años 1800."
+answers = ["la Guerra de 1812", "la Guerra entre México y los Estados Unidos", "la Guerra Civil", "la Guerra entre España y los Estados Unidos"]
+
+[["Historia Estadounidense"]]
+id = 73
+question = "Dé el nombre de la guerra entre el Norte y el Sur de los Estados Unidos."
+answers = ["la Guerra Civil", "la Guerra entre los Estados"]
+
+[["Historia Estadounidense"]]
+id = 74
+question = "Mencione un problema que condujo a la Guerra Civil."
+answers = ["la esclavitud", "razones económicas", "derechos de los estados"]
+
+[["Historia Estadounidense"]]
+id = 75
+question = "¿Qué fue una cosa importante que hizo Abraham Lincoln?"
+answers = ["liberó a los esclavos (Proclamación de la Emancipación)", "salvó (o preservó) la Unión", "presidió los Estados Unidos durante la Guerra Civil"]
+
+[["Historia Estadounidense"]]
+id = 76
+question = "¿Qué hizo la Proclamación de la Emancipación?"
+answers = ["liberó a los esclavos", "liberó a los esclavos de la Confederación", "liberó a los esclavos en los estados de la Confederación", "liberó a los esclavos en la mayoría de los estados del Sur"]
+
+[["Historia Estadounidense"]]
+id = 77
+question = "¿Qué hizo Susan B. Anthony?"
+answers = ["luchó por los derechos de la mujer", "luchó por los derechos civiles"]
+
+[["Historia Estadounidense"]]
+id = 78
+question = "Mencione una guerra en la que peleó los Estados Unidos en los años 1900."
+answers = ["la Primera Guerra Mundial", "la Segunda Guerra Mundial", "la Guerra de Corea", "la Guerra de Vietnam", "la Guerra del Golfo (Persa)"]
+
+[["Historia Estadounidense"]]
+id = 79
+question = "¿Quién era presidente durante la Primera Guerra Mundial?"
+answers = ["(Woodrow) Wilson"]
+
+[["Historia Estadounidense"]]
+id = 80
+question = "¿Quién era presidente durante la Gran Depresión y la Segunda Guerra Mundial?"
+answers = ["(Franklin) Roosevelt"]
+
+[["Historia Estadounidense"]]
+id = 81
+question = "¿Contra qué países peleó los Estados Unidos en la Segunda Guerra Mundial?"
+answers = ["Japón, Alemania e Italia"]
+
+[["Historia Estadounidense"]]
+id = 82
+question = "Antes de ser Presidente, Eisenhower era general. ¿En qué guerra participó?"
+answers = ["la Segunda Guerra Mundial"]
+
+[["Historia Estadounidense"]]
+id = 83
+question = "Durante la Guerra Fría, ¿cuál era la principal preocupación de los Estados Unidos?"
+answers = ["el comunismo"]
+
+[["Historia Estadounidense"]]
+id = 84
+question = "¿Qué movimiento trató de poner fin a la discriminación racial?"
+answers = ["(el movimiento en pro de los) derechos civiles"]
+
+[["Historia Estadounidense"]]
+id = 85
+question = "¿Qué hizo Martin Luther King, Jr.?"
+answers = ["luchó por los derechos civiles", "trabajó por la igualdad de todos los ciudadanos estadounidenses"]
+
+[["Historia Estadounidense"]]
+id = 86
+question = "¿Qué suceso de gran magnitud ocurrió el 11 de septiembre de 2001 en los Estados Unidos?"
+answers = ["Los terroristas atacaron los Estados Unidos."]
+
+[["Historia Estadounidense"]]
+id = 87
+question = "Mencione una tribu de indios americanos de los Estados Unidos."
+answers = ["Cherokee", "Navajo", "Sioux", "Chippewa", "Choctaw", "Pueblo", "Apache", "Iroquois", "Creek", "Blackfeet", "Seminole", "Cheyenne", "Arawak", "Shawnee", "Mohegan", "Huron", "Oneida", "Lakota", "Crow", "Teton", "Hopi", "Inuit"]
+
+[["Educación Cívica Integrada"]]
+id = 88
+question = "Mencione uno de los dos ríos más largos en los Estados Unidos."
+answers = ["el río Missouri", "el río Mississippi"]
+
+[["Educación Cívica Integrada"]]
+id = 89
+question = "¿Qué océano está en la costa oeste de los Estados Unidos?"
+answers = ["el océano Pacífico"]
+
+[["Educación Cívica Integrada"]]
+id = 90
+question = "¿Qué océano está en la costa este de los Estados Unidos?"
+answers = ["el océano Atlántico"]
+
+[["Educación Cívica Integrada"]]
+id = 91
+question = "Dé el nombre de un territorio de los Estados Unidos."
+answers = ["Puerto Rico", "Islas Vírgenes de los Estados Unidos", "Samoa Americana", "Islas Marianas del Norte", "Guam"]
+
+[["Educación Cívica Integrada"]]
+id = 92
+question = "Mencione un estado que tiene frontera con Canadá."
+answers = ["Maine", "New Hampshire", "Vermont", "New York", "Pennsylvania", "Ohio", "Michigan", "Minnesota", "North Dakota", "Montana", "Idaho", "Washington", "Alaska"]
+
+[["Educación Cívica Integrada"]]
+id = 93
+question = "Mencione un estado que tiene frontera con México."
+answers = ["California", "Arizona", "New Mexico", "Texas"]
+
+[["Educación Cívica Integrada"]]
+id = 94
+question = "¿Cuál es la capital de los Estados Unidos?"
+answers = ["Washington, D.C."]
+
+[["Educación Cívica Integrada"]]
+id = 95
+question = "¿Dónde está la Estatua de la Libertad?"
+answers = ["el puerto de New York", "Liberty Island", "New Jersey", "cerca de la ciudad de New York", "en el (río) Hudson"]
+
+[["Educación Cívica Integrada"]]
+id = 96
+question = "¿Por qué hay 13 franjas en la bandera?"
+answers = ["porque representan las 13 colonias originales", "porque las franjas representan las colonias originales"]
+
+[["Educación Cívica Integrada"]]
+id = 97
+question = "¿Por qué hay 50 estrellas en la bandera?"
+answers = ["porque hay una estrella por cada estado", "porque cada estrella representa un estado", "porque hay 50 estados"]
+
+[["Educación Cívica Integrada"]]
+id = 98
+question = "¿Cómo se llama el himno nacional?"
+answers = ["The Star-Spangled Banner"]
+
+[["Educación Cívica Integrada"]]
+id = 99
+question = "¿Cuándo celebramos el Día de la Independencia?"
+answers = ["el 4 de julio"]
+
+[["Educación Cívica Integrada"]]
+id = 100
+question = "Mencione dos días feriados nacionales de los Estados Unidos."
+answers = ["el Día de Año Nuevo", "el Día de Martin Luther King, Jr.", "el Día de los Presidentes", "el Día de la Recordación", "el Día Nacional de la Independencia de Juneteenth", "el Día de la Independencia", "el Día del Trabajo", "el Día de la Raza", "el Día de los Veteranos", "el Día de Acción de Gracias", "el Día de Navidad"]
