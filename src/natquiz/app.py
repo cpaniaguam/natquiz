@@ -8,9 +8,10 @@ from collections import Counter
 from typing import List, Dict, Union
 
 from natquiz.parse_questions import load_questions, show_questions
+from natquiz.i18n import get_strings
 
 
-def select_questions(n:int) -> Dict[str, List[Dict[str, Union[int, str, List[str]]]]]:
+def select_questions(n:int, language="en") -> Dict[str, List[Dict[str, Union[int, str, List[str]]]]]:
     """
     Select `n` questions to ask during the quiz.
 
@@ -36,7 +37,7 @@ def select_questions(n:int) -> Dict[str, List[Dict[str, Union[int, str, List[str
         }
     """
 
-    questions:dict = load_questions()
+    questions:dict = load_questions(language)
     categories = list(questions.keys())
     # categories are
     # 'Principles of American Democracy'
@@ -61,8 +62,10 @@ def clear_screen():
     else:
         os.system('clear')
 
-def ask_questions(n, clear_scr=True):
-    questions_to_ask = select_questions(n)
+def ask_questions(n, language="en", clear_scr=True):
+    questions_to_ask = select_questions(n, language)
+    strings = get_strings(language)
+    
     for j, (cat, _question) in enumerate(questions_to_ask, 1):
         id, question, answers = (
             _question["id"],
@@ -70,18 +73,18 @@ def ask_questions(n, clear_scr=True):
             _question["answers"],
         )
         
-        print(f"Question {j} of {n}" f"\nCategory: {cat}" f"\n{question}")
-        input("(Press enter to show answers)")
+        print(strings["question_header"].format(j, n) + f"\n{strings['category'].format(cat)}" + f"\n{question}")
+        input(strings["press_enter_show_answers"])
         for i, answer in enumerate(answers, 1):
-            print(f"\tAnswer {i}: {answer}")
+            print(f"\t{strings['answer_prefix'].format(i, answer)}")
 
         # Pause between answer and next question
         if j < n:
-            input("\n(Press enter for the next question)")
+            input("\n" + strings["press_enter_next"])
             if clear_scr:
                 clear_screen()
         else:
-            print("\nThis is the end of the quiz. Would you like to do another quiz? (Yes/No): ")
+            print(strings["end_quiz"])
     
         print()
 
@@ -100,29 +103,32 @@ def main():
     parser.add_argument("-n", type=bounded_int, default=10, help="Number of questions to ask (default: 10)")
     parser.add_argument("--show-all", action="store_true", default=False, help="Show all questions and exit")
     parser.add_argument("--clear-scr", action="store_true", default=False, help="Clear screen after answer is shown (default: False unless specified)")
+    parser.add_argument("-l", "--language", choices=["en", "es"], default="en", help="Language for questions and interface (default: en)")
     args = parser.parse_args()
 
+    strings = get_strings(args.language)
+
     if args.show_all:
-        show_questions()
+        show_questions(args.language)
         return
 
     do_another = True
     while do_another:
         clear_screen()
-        print(f"\n- US Naturalization Quiz -")
-        print(f"\nNumber of questions to ask: {args.n}\n")
-        ask_questions(args.n, clear_scr=args.clear_scr)
+        print(f"\n- {strings['title']} -")
+        print(f"\n{strings['num_questions'].format(args.n)}\n")
+        ask_questions(args.n, language=args.language, clear_scr=args.clear_scr)
 
         while True:
             response = input()
-            if not response or response.lower()[0] not in ["y", "n"]:
-                print("Invalid input. Please enter Yes or No.")
+            if not response or response.lower()[0] not in ["y", "n", "s"]:  # Added "s" for "sí"
+                print(strings["invalid_input"])
             else:
                 response = response.lower()[0]
-                do_another = True if response == "y" else False
+                do_another = True if response in ["y", "s"] else False  # Accept both "y" and "s" for yes
                 break
 
-    print("Good luck on your interview!\n")
+    print(strings["good_luck"] + "\n")
 
 if __name__ == "__main__":
     main()

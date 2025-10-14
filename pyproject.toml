@@ -37,8 +37,7 @@ natquiz = "natquiz.app:main"
 [tool.setuptools]
 # If there are data files included in your packages that need to be
 # installed, specify them here.
-# TODO: ADD ANY DATA FILES WE WANT TO HAVE
-# package-data = {"natquiz" = ["config/*.json"]}
+package-data = {"natquiz" = ["*.toml"]}
 
 [tool.setuptools.packages.find]
 where = ["src"]
