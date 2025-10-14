@@ -66,6 +66,14 @@ def ask_questions(n, language="en", clear_scr=True):
     questions_to_ask = select_questions(n, language)
     strings = get_strings(language)
     
+    # Extract strings to variables
+    question_header_tpl = strings["question_header"]
+    category_tpl = strings["category"]
+    press_enter_show_answers = strings["press_enter_show_answers"]
+    answer_prefix_tpl = strings["answer_prefix"]
+    press_enter_next = strings["press_enter_next"]
+    end_quiz = strings["end_quiz"]
+    
     for j, (cat, _question) in enumerate(questions_to_ask, 1):
         id, question, answers = (
             _question["id"],
@@ -73,18 +81,18 @@ def ask_questions(n, language="en", clear_scr=True):
             _question["answers"],
         )
         
-        print(strings["question_header"].format(j, n) + f"\n{strings['category'].format(cat)}" + f"\n{question}")
-        input(strings["press_enter_show_answers"])
+        print(question_header_tpl.format(j, n) + f"\n{category_tpl.format(cat)}" + f"\n{question}")
+        input(press_enter_show_answers)
         for i, answer in enumerate(answers, 1):
-            print(f"\t{strings['answer_prefix'].format(i, answer)}")
+            print(f"\t{answer_prefix_tpl.format(i, answer)}")
 
         # Pause between answer and next question
         if j < n:
-            input("\n" + strings["press_enter_next"])
+            input("\n" + press_enter_next)
             if clear_scr:
                 clear_screen()
         else:
-            print(strings["end_quiz"])
+            print(end_quiz)
     
         print()
 
@@ -112,23 +120,29 @@ def main():
         show_questions(args.language)
         return
 
+    # Extract strings to variables
+    title = strings['title']
+    num_questions = strings['num_questions']
+    invalid_input = strings["invalid_input"]
+    good_luck = strings["good_luck"]
+
     do_another = True
     while do_another:
         clear_screen()
-        print(f"\n- {strings['title']} -")
-        print(f"\n{strings['num_questions'].format(args.n)}\n")
+        print(f"\n- {title} -")
+        print(f"\n{num_questions.format(args.n)}\n")
         ask_questions(args.n, language=args.language, clear_scr=args.clear_scr)
 
         while True:
             response = input()
             if not response or response.lower()[0] not in ["y", "n", "s"]:  # Added "s" for "sí"
-                print(strings["invalid_input"])
+                print(invalid_input)
             else:
                 response = response.lower()[0]
                 do_another = True if response in ["y", "s"] else False  # Accept both "y" and "s" for yes
                 break
 
-    print(strings["good_luck"] + "\n")
+    print(good_luck + "\n")
 
 if __name__ == "__main__":
     main()

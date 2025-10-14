@@ -9,13 +9,13 @@ answers = ["la Constitución"]
 
 [["Principios de la Democracia Estadounidense"]]
 id = 2
-question = "¿Qué hace la Constitución?"
+question = "¿Qué función cumple la Constitución?"
 answers = ["establece el gobierno", "define el gobierno", "protege los derechos básicos de los ciudadanos estadounidenses"]
 
 [["Principios de la Democracia Estadounidense"]]
 id = 3
 question = "La idea del autogobierno está en las primeras tres palabras de la Constitución. ¿Cuáles son estas palabras?"
-answers = ["Nosotros el Pueblo"]
+answers = ["Nosotros el Pueblo (We the People)"]
 
 [["Principios de la Democracia Estadounidense"]]
 id = 4
@@ -25,7 +25,7 @@ answers = ["un cambio (a la Constitución)", "una adición (a la Constitución)"
 [["Principios de la Democracia Estadounidense"]]
 id = 5
 question = "¿Cómo llamamos a las primeras diez enmiendas a la Constitución?"
-answers = ["la Carta de Derechos"]
+answers = ["la Carta de Derechos (Bill of Rights)"]
 
 [["Principios de la Democracia Estadounidense"]]
 id = 6
@@ -39,7 +39,7 @@ answers = ["veintisiete (27)"]
 
 [["Principios de la Democracia Estadounidense"]]
 id = 8
-question = "¿Qué hizo la Declaración de Independencia?"
+question = "¿Qué estableció la Declaración de Independencia?"
 answers = ["anunció nuestra independencia (de Gran Bretaña)", "declaró nuestra independencia (de Gran Bretaña)", "dijo que los Estados Unidos se independizó (de Gran Bretaña)"]
 
 [["Principios de la Democracia Estadounidense"]]
